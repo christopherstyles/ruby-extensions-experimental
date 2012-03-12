@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project contains experimental extensions to the Ruby standard classes, for use exclusively as a process of exploration. ie, just play!
+This project contains experimental extensions to Ruby standard classes, for use exclusively as a process of exploration. ie, just play!
 
 ## What's included
 
