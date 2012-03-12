@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project contains experimental Ruby extensions, used exclusively as an explorative process rather than production solutions. It's simply play!
+This project contains experimental extensions to the Ruby standard classes, for use exclusively as a process of exploration...it's just play!
 
 ## What's included
 
@@ -24,6 +24,7 @@ Unit tests are located in the <tt>test</tt> directory and can be run using Rake,
 ## Benchmarks
 
 You can run benchmarks on the various extension methods using Rake
+    
     rake benchmark:array
     
     # Alternately, specify the number of benchmarked array items
