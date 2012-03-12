@@ -1,5 +1,5 @@
 module Extensions
-  # Extensions are a contrived set of extension methods, for experimentation purposes only.
+  # Extensions are a contrived set of extension methods, for experimental purposes only.
   module Array
     def self.included(base)
       base.instance_eval do
@@ -15,16 +15,14 @@ module Extensions
         select { |item| ary.include?(item) }.compact.uniq
       end
       
-      # Another obvious answer, though a little slower with larger datasets
+      # Another obvious answer, though slower with larger datasets
       def intersects_with_collect(ary)
         collect { |item| item if ary.include?(item) }.compact.uniq
       end
       
       # Let's use a while loop for some speed
       def intersects_with_while(ary)
-        # The working arrays
         a1, a2, store = self.sort, ary.sort, []
-        # Indices starting points
         i, j = 0, 0
         while i < a1.length && j < a2.length
           if a1[i] == a2[j]
@@ -40,7 +38,7 @@ module Extensions
         store.uniq
       end
       
-      # And maybe try a for loop as well, why not
+      # Maybe try a for loop as well, why not
       def intersects_with_for(ary)
         store = []
         if size > ary.length then
