@@ -27,4 +27,4 @@ namespace :benchmark do
   end
 end
 
-task :default => [:'test:array']
+task :default => [:test]
